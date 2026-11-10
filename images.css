@@ -1,0 +1,11 @@
+:root{--green:#c45a22;--dark:#291a12;--clay:#b8501b;--gold:#d28b40}
+.hero-home{background-image:url('images/gallery-3.jpg')}
+.bread-card,.bread-hero,.bread-photo{background-image:url('images/event-private.jpg')}
+.pasta-card,.pasta-hero,.pasta-photo{background-image:url('images/event-birthday.jpg')}
+.cafe-card,.cafe-hero,.visit-image{background-image:url('images/gallery-2.jpg')}
+.contact-hero{background-image:url('images/about.jpg')}
+.central-photo{background-image:url('images/gallery-3.jpg')}
+.espana-photo{background-image:url('images/gallery-1.jpg')}
+
+.hero-home{background-image:url('assets/fachada-bossio-home.png');background-position:center 58%}
+
