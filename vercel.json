@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://multinegocio.baboons.com.ar/api/:path*" },
+    { "source": "/bossio/site.css", "destination": "/site.css" },
+    { "source": "/bossio/images.css", "destination": "/images.css" },
+    { "source": "/bossio/site.js", "destination": "/site.js" },
+    { "source": "/bossio/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/bossio/images/:path*", "destination": "/images/:path*" },
+    { "source": "/bossio", "destination": "/index.html" },
+    { "source": "/bossio/:path*", "destination": "/index.html" }
+  ]
+}

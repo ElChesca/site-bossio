@@ -2,9 +2,14 @@
   'use strict';
   var businessId = 20;
   var api = '/api/public/negocios/' + businessId;
-  var page = document.body.getAttribute('data-page') || 'inicio';
-  if (page === '__PAGE__') page = new URLSearchParams(location.search).get('page') || 'inicio';
   var localPreview = location.protocol === 'file:';
+  var page = document.body.getAttribute('data-page') || 'inicio';
+  if (page === '__PAGE__') {
+    var requestedPage = new URLSearchParams(location.search).get('page');
+    var routeParts = location.pathname.split('/').filter(Boolean);
+    var routePage = routeParts[0] === 'bossio' ? (routeParts[1] || 'inicio') : 'inicio';
+    page = requestedPage || (localPreview ? 'inicio' : routePage);
+  }
   var validPages = ['inicio', 'panaderia', 'pastas', 'cafe', 'contacto', 'pedidos'];
   if (page === 'bossio' || validPages.indexOf(page) === -1) page = 'inicio';
   var titles = {
