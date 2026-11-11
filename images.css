@@ -1,5 +1,4 @@
 :root{--green:#c45a22;--dark:#291a12;--clay:#b8501b;--gold:#d28b40}
-.hero-home{background-image:url('images/gallery-3.jpg')}
 .bread-card,.bread-hero,.bread-photo{background-image:url('images/event-private.jpg')}
 .pasta-card,.pasta-hero,.pasta-photo{background-image:url('images/event-birthday.jpg')}
 .cafe-card,.cafe-hero,.visit-image{background-image:url('images/gallery-2.jpg')}
@@ -7,5 +6,31 @@
 .central-photo{background-image:url('images/gallery-3.jpg')}
 .espana-photo{background-image:url('images/gallery-1.jpg')}
 
-.hero-home{background-image:url('assets/fachada-bossio-home.png');background-position:center 58%}
+.hero-home{background-color:#f7f2e9;background-image:radial-gradient(ellipse at 78% 48%,rgba(228,187,135,.28),transparent 35%),linear-gradient(110deg,#fbf8f2 0%,#f8f2e7 100%);color:#2d302a;overflow:hidden;min-height:620px}
+.hero-home .shade{display:none}
+.hero-home .hero-content{width:min(46%,580px);margin-left:max(calc((100% - var(--page))/2 + 28px),5vw);margin-right:auto;padding:82px 0;z-index:2}
+.hero-home .eyebrow{color:#b8501b}
+.hero-home h1 em{color:#526b4e}
+.hero-home .hero-content>p:not(.eyebrow){color:#5f574c}
+.hero-home .button-light{background:#c45a22;color:#fff}
+.hero-home .text-link.light{color:#38291f}
+.hero-collage{position:absolute;z-index:1;top:34px;right:max(calc((100% - var(--page))/2 + 8px),3vw);width:min(43vw,540px);height:520px}
+.hero-collage:before{content:"";position:absolute;inset:8% 4% 7% 12%;border-radius:51% 43% 54% 46%/44% 53% 43% 56%;background:#efdcc2;transform:rotate(-8deg)}
+.collage-shape{position:absolute;display:block;pointer-events:none}
+.collage-orbit{width:82%;height:82%;top:9%;left:9%;border:1px solid rgba(184,80,27,.5);border-radius:50%;transform:rotate(24deg) scaleX(.8)}
+.collage-sun{width:104px;height:104px;right:5%;top:3%;border-radius:50%;background:#c45a22;box-shadow:inset -16px -12px 0 rgba(41,26,18,.1)}
+.collage-photo{position:absolute;margin:0;padding:8px 8px 24px;background:#fffdf8;box-shadow:0 18px 45px rgba(65,45,27,.2);overflow:hidden}
+.collage-photo img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(1.12) contrast(1.04)}
+.collage-photo-main{width:56%;height:70%;top:7%;right:7%;transform:rotate(4deg)}
+.collage-photo-main img{object-position:center 56%}
+.collage-photo-bread{width:45%;height:28%;top:20%;left:0;transform:rotate(-7deg)}
+.collage-photo-bread img{object-position:58% 42%}
+.collage-photo-pasta{width:48%;height:29%;bottom:4%;left:14%;transform:rotate(3deg)}
+.collage-photo-pasta img{object-position:58% 55%}
+.collage-caption{position:absolute;right:3%;bottom:8%;z-index:2;padding:12px 17px;background:#fbf8f2;color:#553a28;font:italic 15px/1.1 var(--serif);box-shadow:0 8px 25px rgba(65,45,27,.13);transform:rotate(-5deg)}
+.collage-caption b{color:#c45a22;font-size:22px;font-weight:500}
+.collage-spark{position:absolute;left:4%;bottom:8%;z-index:2;color:#c45a22;font-size:44px;line-height:1}
+.hero-home .hero-note{z-index:3;right:max(calc((100% - var(--page))/2 + 22px),4vw);bottom:21px;padding:8px 15px;background:rgba(251,248,242,.92);color:#392a20;border-radius:30px;letter-spacing:.07em;box-shadow:0 5px 18px rgba(65,45,27,.1)}
+.hero-home .hero-note b{font-size:34px;color:#c45a22}
+@media(max-width:700px){.hero-home{min-height:790px;align-items:flex-start}.hero-home .hero-content{width:auto;margin:0;padding:42px 21px 0}.hero-collage{width:calc(100% - 24px);height:330px;top:auto;right:0;bottom:20px}.collage-photo-main{width:54%;height:72%;right:4%;top:5%}.collage-photo-bread{width:47%;height:29%;top:16%;left:0}.collage-photo-pasta{width:48%;height:29%;bottom:1%;left:11%}.hero-home .hero-note{right:18px;bottom:12px;padding:5px 11px}.hero-home .hero-note b{font-size:28px}}
 
